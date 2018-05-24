@@ -7,7 +7,7 @@ dependencies:
 
   test:
     - run: npm install
-    - run: npm test 
+    #- run: npm test 
   post:
     - cf api https://api.ng.bluemix.net
     - cf auth $BLUEMIX_USER $BLUEMIX_PASSWORD

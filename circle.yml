@@ -6,6 +6,7 @@ dependencies:
 
 
   test:
+
   post:
     - cf api https://api.ng.bluemix.net
     - cf auth $BLUEMIX_USER $BLUEMIX_PASSWORD

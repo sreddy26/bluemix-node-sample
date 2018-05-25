@@ -9,7 +9,7 @@ dependencies:
 
   post:
     - cf api https://api.ng.bluemix.net
-    - cf auth $BLUEMIX_USER $BLUEMIX_PASSWORD
+    - cf auth $BLUEMIX_USER $BLUEMIX_API
     - cf target -o $BLUEMIX_ORG -s $BLUEMIX_SPACE
     - cf a
 

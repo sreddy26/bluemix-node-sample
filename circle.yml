@@ -1,18 +1,18 @@
 dependencies:
   pre:
-    - curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
-    - sudo dpkg -i cf-cli_amd64.deb
+    - curl -v -L -o IBM-Cloud-CLI_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
+    - sudo dpkg -i IBM-Cloud-CLI_amd64.deb
     - cf -v 
 
 
   test:
 
   post:
-    - cf login --apikey D8DiGlbQRCFSJpbJ3Eik2QGIbRX3iykqXf09XtSbOCF0
+    - bx login --apikey D8DiGlbQRCFSJpbJ3Eik2QGIbRX3iykqXf09XtSbOCF0
     #- bx api https://api.ng.bluemix.net
     #- cf auth $BLUEMIX_USER $BLUEMIX_PASSWORD
     - cf target -o $BLUEMIX_ORG -s $BLUEMIX_SPACE
-    - cf a
+    #- cf a
 
 deployment:
   production:

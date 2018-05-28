@@ -1,7 +1,7 @@
 dependencies:
   pre:
-    - curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
-    - sudo dpkg -i cf-cli_amd64.deb
+    - curl -v -L -o bx-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
+    - sudo dpkg -i bx-cli_amd64.deb
     - cf -v 
 
 

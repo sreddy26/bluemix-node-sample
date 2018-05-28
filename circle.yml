@@ -8,8 +8,9 @@ dependencies:
   test:
 
   post:
+    - cf login -- sso
     - cf api https://api.ng.bluemix.net
-    - cf auth $BLUEMIX_USER $BLUEMIX_API
+    - cf auth $BLUEMIX_USER $BLUEMIX_PASSWORD
     - cf target -o $BLUEMIX_ORG -s $BLUEMIX_SPACE
     - cf a
 

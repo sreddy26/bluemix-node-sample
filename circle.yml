@@ -8,7 +8,7 @@ dependencies:
   test:
 
   post:
-    - cf login --apikey D8DiGlbQRCFSJpbJ3Eik2QGIbRX3iykqXf09XtSbOCF0
+    - bx login --apikey D8DiGlbQRCFSJpbJ3Eik2QGIbRX3iykqXf09XtSbOCF0
     - cf api https://api.ng.bluemix.net
     #- cf auth $BLUEMIX_USER $BLUEMIX_PASSWORD
     - cf target -o $BLUEMIX_ORG -s $BLUEMIX_SPACE

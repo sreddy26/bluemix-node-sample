@@ -4,7 +4,6 @@ dependencies:
     - sudo dpkg -i IBM-Cloud-CLI_amd64.deb
     - cf -v 
 
-
   test:
 
   post:
@@ -14,7 +13,7 @@ dependencies:
     #- cf auth $BLUEMIX_USER $BLUEMIX_PASSWORD
     #- cf target -o $BLUEMIX_ORG -s $BLUEMIX_SPACE
     #- cf a
-
+        
 deployment:
   production:
     branch: master

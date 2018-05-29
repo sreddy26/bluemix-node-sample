@@ -4,5 +4,5 @@ applications:
   instances: 1
   domain: mybluemix.net
   name: test
-  host: test-rak
+  host: sample
   disk_quota: 1024M

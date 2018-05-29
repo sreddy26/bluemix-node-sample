@@ -19,4 +19,4 @@ deployment:
   production:
     branch: master
     commands:
-      - bx cf push
+      - cf push

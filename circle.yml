@@ -9,10 +9,10 @@ dependencies:
 
   post:
     #- bx login --apikey D8DiGlbQRCFSJpbJ3Eik2QGIbRX3iykqXf09XtSbOCF0
-    - cf login -a https://api.ng.bluemix.net -u apikey -p D8DiGlbQRCFSJpbJ3Eik2QGIbRX3iykqXf09XtSbOCF0
+    - cf login -a https://api.ng.bluemix.net -u apikey -p D8DiGlbQRCFSJpbJ3Eik2QGIbRX3iykqXf09XtSbOCF0  -o $BLUEMIX_ORG -s $BLUEMIX_SPACE
     #- bx api https://api.ng.bluemix.net
     #- cf auth $BLUEMIX_USER $BLUEMIX_PASSWORD
-    - cf target -o $BLUEMIX_ORG -s $BLUEMIX_SPACE
+    #- cf target -o $BLUEMIX_ORG -s $BLUEMIX_SPACE
     #- cf a
 
 deployment:
